@@ -54,19 +54,19 @@ This project was developed as Task 01 of the SkillCraft Technology Machine Learn
 
 ```text
 SCT_ML_1/
-├── .gitignore                  # Ignore local environment and editor files
-├── .venv/                      # Local virtual environment (not uploaded to GitHub)
+├── .gitignore                
+├── .venv/                      # Local virtual environment(created from steps below)
 ├── README.md                   # Project documentation
 ├── requirements.txt            # Python dependencies
 ├── linear_regression.py        # Main ML script
-├── actual_vs_predicted.png     # Actual vs predicted chart
-├── submission_task1.csv        # Model predictions for test data
+├── actual_vs_predicted.png     # created as ouput
+├── submission_task1.csv        
 ├── data/
-│   ├── train.csv              # Training dataset
-│   ├── test.csv               # Test dataset
-│   ├── sample_submission.csv  # Example submission format
-│   └── data_description.txt   # Dataset feature definitions
-└── .vscode/                   # Optional editor settings
+   ├── train.csv              
+   ├── test.csv               
+   ├── sample_submission.csv  
+   └── data_description.txt   
+
 ```
 
 ## 💻 How to Run
@@ -111,7 +111,7 @@ The script generates:
 - `submission_task1.csv`
 - `actual_vs_predicted.png`
 
-> The `.venv` folder is intentionally ignored in `.gitignore`, so it will not be pushed to GitHub.
+
 
 ---
 
