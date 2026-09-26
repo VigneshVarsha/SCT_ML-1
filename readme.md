@@ -54,18 +54,18 @@ This project was developed as Task 01 of the SkillCraft Technology Machine Learn
 
 ```text
 SCT_ML_1/
-├── train.csv                   # Training dataset
-├── test.csv                    # Test dataset
-├── data_description.txt        # Dataset feature descriptions
-├── linear_regression.py        # Main project script
-├── sample_submission.csv       # Submission format example
-├── submission_task1.csv        # Final model predictions
-├── actual_vs_predicted.png     # Actual vs. predicted plot
-├── README.md                   # Project documentation
-├── requirements.txt            # Dependencies
-├── .gitignore                  # Ignores local environment files
-├── .venv/                     # Local virtual environment (not uploaded to GitHub)
-└── .vscode/                   # Optional editor settings
+├── train.csv                   
+├── test.csv                    
+├── data_description.txt        
+├── linear_regression.py       
+├── sample_submission.csv      
+├── submission_task1.csv        
+├── actual_vs_predicted.png     
+├── README.md                   
+├── requirements.txt            
+├── .gitignore                  
+├── .venv/                     
+└── .vscode/                   
 ```
 
 ---
