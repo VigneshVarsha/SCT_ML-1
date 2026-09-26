@@ -1,0 +1,22 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# IDE/editor files
+.vscode/
+.idea/
+
+# Data files generated during execution
+actual_vs_predicted.png
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
