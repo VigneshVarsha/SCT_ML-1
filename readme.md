@@ -69,6 +69,52 @@ SCT_ML_1/
 └── .vscode/                   # Optional editor settings
 ```
 
+## 💻 How to Run
+
+### Prerequisites
+- Python 3.10 or later
+- pip package manager
+
+### Step 1: Create a virtual environment
+
+```bash
+python -m venv .venv
+```
+
+### Step 2: Activate the environment
+
+Windows (PowerShell):
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+
+Windows (Command Prompt):
+```cmd
+.venv\Scripts\activate.bat
+```
+
+
+### Step 3: Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Step 4: Run the project
+
+```bash
+python linear_regression.py
+```
+
+### Step 5: View outputs
+The script generates:
+- `submission_task1.csv`
+- `actual_vs_predicted.png`
+
+> The `.venv` folder is intentionally ignored in `.gitignore`, so it will not be pushed to GitHub.
+
+---
+
 ---
 
 ## 🎯 Learning Outcomes
@@ -95,59 +141,10 @@ A sample visualization, `actual_vs_predicted.png`, shows how closely the model's
 
 ---
 
-## 💻 How to Run
-
-### Prerequisites
-- Python 3.10 or later
-- pip package manager
-
-### Step 1: Create a virtual environment
-
-```bash
-python -m venv .venv
-```
-
-### Step 2: Activate the environment
-
-Windows (PowerShell):
-```powershell
-.\.venv\Scripts\Activate.ps1
-```
-
-Windows (Command Prompt):
-```cmd
-.venv\Scripts\activate.bat
-```
-
-macOS/Linux:
-```bash
-source .venv/bin/activate
-```
-
-### Step 3: Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### Step 4: Run the project
-
-```bash
-python linear_regression.py
-```
-
-### Step 5: View outputs
-The script generates:
-- `submission_task1.csv`
-- `actual_vs_predicted.png`
-
-> The `.venv` folder is intentionally ignored in `.gitignore`, so it will not be pushed to GitHub.
-
----
 
 ## 👨‍💻 Author
 
-**Author:** Devrakonda Vignesh Varsha  
+**Author:** Devarakonda Vignesh Varsha  
 **Project Type:** Machine Learning Internship Task
 
 ---
