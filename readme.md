@@ -54,18 +54,19 @@ This project was developed as Task 01 of the SkillCraft Technology Machine Learn
 
 ```text
 SCT_ML_1/
-├── train.csv                   
-├── test.csv                    
-├── data_description.txt        
-├── linear_regression.py       
-├── sample_submission.csv      
-├── submission_task1.csv        
-├── actual_vs_predicted.png     
-├── README.md                   
-├── requirements.txt            
-├── .gitignore                  
-├── .venv/                     
-└── .vscode/                   
+├── .gitignore                  # Ignore local environment and editor files
+├── .venv/                      # Local virtual environment (not uploaded to GitHub)
+├── README.md                   # Project documentation
+├── requirements.txt            # Python dependencies
+├── linear_regression.py        # Main ML script
+├── actual_vs_predicted.png     # Actual vs predicted chart
+├── submission_task1.csv        # Model predictions for test data
+├── data/
+│   ├── train.csv              # Training dataset
+│   ├── test.csv               # Test dataset
+│   ├── sample_submission.csv  # Example submission format
+│   └── data_description.txt   # Dataset feature definitions
+└── .vscode/                   # Optional editor settings
 ```
 
 ---
@@ -146,7 +147,7 @@ The script generates:
 
 ## 👨‍💻 Author
 
-**Author:** Your Name  
+**Author:** Devrakonda Vignesh Varsha  
 **Project Type:** Machine Learning Internship Task
 
 ---

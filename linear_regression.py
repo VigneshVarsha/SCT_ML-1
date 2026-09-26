@@ -7,9 +7,12 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.join(PROJECT_ROOT, "data")
+
 # 1. Load Data
-train_path = "train.csv" if os.path.exists("train.csv") else "data/train.csv"
-test_path = "test.csv" if os.path.exists("test.csv") else "data/test.csv"
+train_path = os.path.join(DATA_DIR, "train.csv")
+test_path = os.path.join(DATA_DIR, "test.csv")
 
 train_df = pd.read_csv(train_path)
 test_df = pd.read_csv(test_path)
@@ -70,9 +73,10 @@ submission = pd.DataFrame({
     'Id': test_df['Id'],
     'SalePrice': test_predictions
 })
-# Keep CSV values in plain decimal form to avoid scientific notation like 1.23e+05
-submission.to_csv("submission_task1.csv", index=False, float_format='%.2f')
-print("\nPredictions saved to 'submission_task1.csv'")
+
+submission_path = os.path.join(PROJECT_ROOT, "submission_task1.csv")
+submission.to_csv(submission_path, index=False, float_format='%.2f')
+print(f"\nPredictions saved to '{submission_path}'")
 
 # 7. Visualize Actual vs Predicted
 plt.figure(figsize=(8, 5))
@@ -94,8 +98,9 @@ ax.ticklabel_format(style='plain', axis='both', useOffset=False)
 
 plt.legend()
 plt.tight_layout()
-plt.savefig("actual_vs_predicted.png", dpi=150)  # always save the plot
-print("Plot saved to 'actual_vs_predicted.png'")
+plot_path = os.path.join(PROJECT_ROOT, "actual_vs_predicted.png")
+plt.savefig(plot_path, dpi=150)
+print(f"Plot saved to '{plot_path}'")
 
 # Only open a window if an interactive backend is available (avoid hanging headless)
 if plt.get_backend().lower() not in ("agg", "pdf", "svg", "ps", "cairo"):
