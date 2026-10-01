@@ -163,4 +163,3 @@ A sample visualization, `actual_vs_predicted.png`, shows how closely the model's
 ⭐ This project demonstrates a practical machine learning workflow for tabular data and highlights the value of regression models in real-world price prediction tasks.
 
 </div>
-
